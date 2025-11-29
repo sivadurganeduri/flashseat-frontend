@@ -1,0 +1,50 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom classes for FlashSeat */
+.btn-primary {
+  @apply bg-[#1a237e] hover:bg-[#0d1b3f] text-white px-6 py-3 rounded-lg font-semibold transition-colors;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-[#0f0f0f] border border-[#1a237e] text-white rounded-lg focus:outline-none focus:border-white;
+}
+
+/* Map container height fix */
+.map-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Leaflet marker icon fix (default icons missing) */
+.leaflet-default-icon-path {
+  background-image: url('data:image/svg+xml;base64,...'); 
+}
+
+/* Custom bus marker icon */
+.leaflet-marker-icon {
+  background-color: #1a237e;
+  border-radius: 50%;
+  border: 2px solid white;
+}
