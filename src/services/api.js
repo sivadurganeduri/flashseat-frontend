@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_BASE = 'https://flashseat-backend.onrender.com/api'  // FIXED: Live URL
+const API_BASE = 'https://flashseat-backend-2.onrender.com/api'  // FIXED: Your live backend
 
 const api = axios.create({
   baseURL: API_BASE,
